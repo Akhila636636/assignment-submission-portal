@@ -1,0 +1,29 @@
+/* ─── Design Tokens ──────────────────────────────────────────────────────────── */
+:root {
+  --color-primary:       #80001A;
+  --color-primary-hover: #9a0020;
+  --color-primary-light: #fdf0f2;
+  --color-bg:            #F5F5F7;
+  --color-surface:       #FFFFFF;
+  --color-border:        #E5E7EB;
+  --color-text:          #1E1E1E;
+  --color-muted:         #6B7280;
+  --color-danger:        #DC2626;
+  --color-danger-hover:  #b91c1c;
+  --color-success:       #16A34A;
+  --color-warning:       #D97706;
+  --color-info:          #2563EB;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --radius-sm:  4px;
+  --radius:     8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+
+  --shadow-sm:   0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg:   0 8px 32px rgba(0, 0, 0, 0.12);
+
+  --transition: 0.15s ease;
+}

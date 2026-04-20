@@ -1,0 +1,106 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: var(--color-primary);
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(128, 0, 26, 0.35);
+}
+
+.navbar-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.navbar-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.navbar-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
+
+.navbar-tagline {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.navbar-user-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.navbar-user-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar-user-role {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.navbar .btn-ghost {
+  color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: var(--radius);
+  font-size: 0.82rem;
+}
+
+.navbar .btn-ghost:hover {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}

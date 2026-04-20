@@ -1,0 +1,156 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* ─── Left Panel ─────────────────────────────────────────────────────────────── */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #80001A 0%, #5a0012 60%, #3d000c 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-left::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+}
+
+.login-left::after {
+  content: '';
+  position: absolute;
+  bottom: -120px;
+  left: -60px;
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+}
+
+.login-brand {
+  position: relative;
+  z-index: 1;
+}
+
+.login-logo {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.login-college {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.login-dept {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 320px;
+}
+
+.login-quote {
+  position: relative;
+  z-index: 1;
+}
+
+.login-quote blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  border-left: 3px solid rgba(255,255,255,0.35);
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.login-quote-sub {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 23px;
+}
+
+/* ─── Right Panel ────────────────────────────────────────────────────────────── */
+.login-right {
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 32px;
+  background: var(--color-bg);
+}
+
+.login-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: 40px 36px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+}
+
+.login-card-header {
+  margin-bottom: 28px;
+}
+
+.login-card-header h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+
+.login-card-header p {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-switch {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.link-btn:hover { color: var(--color-primary-hover); }
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .login-page { flex-direction: column; }
+  .login-left  { padding: 40px 28px; min-height: 220px; }
+  .login-right { width: 100%; }
+  .login-college { font-size: 1.8rem; }
+}
