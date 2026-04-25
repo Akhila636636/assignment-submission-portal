@@ -83,7 +83,7 @@ export default function HodDashboard() {
                 <input
                   type="text"
                   className="form-input"
-                  placeholder="e.g. CSE-A"
+                  placeholder="e.g. IT-A"
                   value={newSectionName}
                   onChange={(e) => setNewSectionName(e.target.value)}
                 />

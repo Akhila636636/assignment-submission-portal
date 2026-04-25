@@ -14,7 +14,7 @@ export default function LoginPage() {
     email: '',
     password: '',
     role: 'student',
-    department: 'Computer Science & Engineering',
+    department: 'Information Technology',
   });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -59,7 +59,7 @@ export default function LoginPage() {
         <div className="login-brand">
           <span className="login-logo">🎓</span>
           <h1 className="login-college">VNRVJIET</h1>
-          <p className="login-dept">Department of Computer Science & Engineering</p>
+          <p className="login-dept">Department of Information Technology</p>
         </div>
         <div className="login-quote">
           <blockquote>

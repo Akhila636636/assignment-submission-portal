@@ -17,7 +17,7 @@ export default function AdminDashboard() {
   const [actionMsg, setActionMsg]     = useState(null); // { type, text }
 
   const [newUser, setNewUser] = useState({
-    fullName: '', email: '', password: '', role: 'student', department: 'Computer Science & Engineering',
+    fullName: '', email: '', password: '', role: 'student', department: 'Information Technology',
   });
   const [formError, setFormError]     = useState('');
   const [formLoading, setFormLoading] = useState(false);
@@ -47,7 +47,7 @@ export default function AdminDashboard() {
       const { data } = await api.post('/admin/users', newUser);
       setUsers((prev) => [{ ...data, _id: data.id }, ...prev]);
       setShowAddModal(false);
-      setNewUser({ fullName: '', email: '', password: '', role: 'student', department: 'Computer Science & Engineering' });
+      setNewUser({ fullName: '', email: '', password: '', role: 'student', department: 'Information Technology' });
     } catch (err) {
       setFormError(err.response?.data?.message || 'Failed to create user.');
     } finally {

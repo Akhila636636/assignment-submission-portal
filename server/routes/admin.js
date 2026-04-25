@@ -45,7 +45,7 @@ router.post('/users', async (req, res) => {
       email: email.toLowerCase(),
       password: hashedPassword,
       role,
-      department: department || 'Computer Science & Engineering',
+      department: department || 'Information Technology',
     });
 
     res.status(201).json({

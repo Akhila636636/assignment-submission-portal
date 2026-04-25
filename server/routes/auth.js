@@ -32,7 +32,7 @@ router.post('/register', async (req, res) => {
       email: email.toLowerCase(),
       password: hashedPassword,
       role: role || 'student',
-      department: department || 'Computer Science & Engineering',
+      department: department || 'Information Technology',
     });
 
     const token = signToken(user._id);
